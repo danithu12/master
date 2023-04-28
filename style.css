@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(185,185,191);
+    background: linear-gradient(100deg, rgba(185,185,191,1) 0%, rgba(9,44,85,1) 100%);
+}
+.container{
+    width: 350px;
+    height: 650px;
+    border-radius: 35px;
+    background-color: white;
+    border: 5px solid black;
+    position: relative;
+    overflow: hidden;
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+.notch{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    top: 7px;
+    left: 50%;
+    border-radius: 100px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.top {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #075e54;
+    color: white;
+}
+
+.top-left{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.top-left div{
+    margin: 0px 3px;
+
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.profile img{
+    width: 95%;
+    scale: 2;
+}
+
+.name{
+    font-size: 15px;
+}
+
+.online{
+    font-size: 12px !important;
+    opacity: .6;
+}
+
+.top-right{
+    margin-top: 30px;
+}
+
+.top-right i{
+    margin: 0px 4px;
+    font-size: 20px;
+}
+
+/*bottom*/
+.bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 100px);
+    justify-content: space-between;
+}
+
+.message{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.he{
+    align-self: flex-start;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.l{
+    align-self: flex-end;
+    background-color: #25d366;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.input-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.input-left{
+    background-color: white;
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.input-left input{
+    border: none;
+background-color: transparent;
+}
+
+.input-left i{
+    margin: 0px 4px;
+}
+#mic{
+    background-color: #075e54;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+#send{
+    background-color: #075e54;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    display: none;
+}
